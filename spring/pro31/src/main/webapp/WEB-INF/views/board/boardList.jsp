@@ -13,14 +13,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>공지사항 목록</title>
-    <!-- 헤드 부분 인클루드 -->
-    <jsp:include page="../include/head.jsp"></jsp:include>
+
 </head>
 <body>
-	<header id="header">
-		<!-- 헤더 부분 인클루드 -->
-	 	<jsp:include page="../include/hd.jsp"></jsp:include>
-    </header>
+
 	<div class="content" id="content">
 	    <div class="row column text-center">
 	      <h2 class="h1">공지사항 목록</h2>
@@ -58,9 +54,6 @@
 
 	    </div>
 	</div>
-    <footer id="footer" class="footer-nav row expanded collapse">
-    	<!-- 푸터 부분 인클루드 -->
-    	<jsp:include page="../include/ft.jsp"></jsp:include>
-    </footer>
+
 </body>
 </html>

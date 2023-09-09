@@ -12,8 +12,6 @@ INSERT INTO sample VALUES (DEFAULT, '이은영');
 INSERT INTO sample VALUES (DEFAULT, '서광');
 INSERT INTO sample VALUES (DEFAULT, '이소윤');
 
-COMMIT;
-
 SELECT * FROM sample;
 
 create table board(seq int AUTO_INCREMENT primary key,
@@ -35,4 +33,6 @@ insert into board values(default, '샘플 글 제목6입니다.', '여기는 샘
 SELECT * FROM board;
 
 UPDATE board SET title='샘플 글 제목7입니다.', content='여기는 샘플 글7에 대한 내용입니다.' WHERE seq=6; 
+
+COMMIT;
 
