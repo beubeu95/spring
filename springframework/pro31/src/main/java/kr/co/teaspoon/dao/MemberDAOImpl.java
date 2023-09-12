@@ -9,6 +9,7 @@ import java.util.List;
 
 @Repository
 public class MemberDAOImpl implements MemberDAO {
+
     @Autowired
     private SqlSession sqlSession;
 
@@ -56,7 +57,7 @@ public class MemberDAOImpl implements MemberDAO {
 
     //Ajax로 로그인 처리
     @Override
-    public Member login(String id) throws Exception {
-        return sqlSession.selectOne("member.login", id);
+    public Member loginAjax(Member member) throws Exception {
+        return sqlSession.selectOne("member.login", member);
     }
 }
